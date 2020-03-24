@@ -1,0 +1,185 @@
+/*Font style*/
+
+@font-face {
+    font-family: 'advent_probold';
+    src: url('adventpro-bold-webfont.woff2') format('woff2'),
+         url('adventpro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'advent_proregular';
+    src: url('adventpro-regular-webfont.woff2') format('woff2'),
+         url('adventpro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*general style*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+background: #ccc;
+}
+
+.box {
+  background: url(images/whatsapp.png);
+  width: 700px;
+  height: auto;
+  margin: 20px auto;
+}
+
+/*header*/
+
+header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  text-shadow: 1px 1px 2px black;
+  font-family: 'advent_probold';
+  font-size: 65px;
+  color:black;
+  text-align: center;
+}
+
+.photo-profile {
+  position: absolute;
+  top: -15px;
+  left:0px;
+}
+
+.bottom {
+  position: absolute;
+  background-size: 50px;
+  top: 5px;
+  right:20px;
+}
+
+/*main*/
+
+.title-one {
+  text-shadow: 1px 1px 2px black;
+  font-size: 25px;
+  font-style: arial;
+}
+
+.card-one {
+background: #d7eeb6;
+width: 500px;
+height: auto;
+border: 0.5px solid white;
+padding: 10px;
+margin: 40px 0px 30px 100px;
+border-radius: 20px;
+word-spacing: 4px;
+}
+
+.card-two {
+  background: #d7eeb6;
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  border: 0.5px solid white;
+  margin: 0px 0px 0px 100px;
+  border-radius: 20px;
+  word-spacing: 4px;
+}
+
+.content {
+  margin-left: 5px;
+  font-size: 20px;
+  font-family: 'advent_proregular';
+}
+
+b {
+  text-decoration: underline;
+}
+
+.card-two ul {
+  margin-left: 30px;
+  text-decoration: underline;
+}
+
+/*footer*/
+
+.title-contact {
+  background: #d7eeb6;
+  width: 250px;
+  height: auto;
+  font-size: 25px;
+  font-style: arial;
+  border: 0.5px solid white;
+  padding: 5px;
+  margin: 40px 0px 0px 350px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px black;
+
+}
+
+#contact {
+    margin: 5px 0px 30px 100px;
+    position: relative;
+}
+
+.social-in{
+  position: absolute;
+  top: 205px;
+  left: 0px;
+  width: 150px;
+  height: auto;
+}
+
+.social-fb {
+  position: absolute;
+  top: 206px;
+  right: 155px;
+  width: 175px;
+  height: auto;
+}
+
+.social-ig {
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  width: 150px;
+  height: auto;
+}
+
+.social-mail {
+  position: absolute;
+  bottom: 4px;
+  right: 155px;
+  width: 175px;
+  height: auto;
+}
+
+@media screen and (min-width: 401px) and (max-width: 565px) {
+
+.box {
+  width: 481px;
+  height: auto;
+  }
+
+.card-one, .card-two, .title-contact {
+  width: auto;
+  margin-left: auto;
+  }
+
+#contact {
+ width: auto;
+ margin-left: auto;
+}
+
+.social-mail, .social-fb {
+ bottom: 4px;
+ right: 40px;
+}
+}
